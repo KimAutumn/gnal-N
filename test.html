@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/libs/slick.css">
+  <script src="./assets/js/libs/jquery.js"></script>
+  <script src="./assets/js/libs/slick.js"></script>
+
+  <style>
+    .kv-list .list-item{ position: relative;}
+    .kv-bg {}
+    .kv-bg .list-item {position: absolute; left: 0; right: 0; top: 0; bottom: 0;}
+    .kv-bg :nth-child(1){ background-color: pink; }
+    .kv-bg :nth-child(2) {background-color: blue; }
+    .kv-bg :nth-child(3) {background-color: purple; }
+  </style>
+</head>
+<body>
+  <div class="kv-bg">
+    <div class="list-item"><a href="#"></a></div>
+    <div class="list-item"><a href="#"></a></div>
+    <div class="list-item"><a href="#"></a></div>
+  </div>
+  <div class="kv-list">
+    <div class="list-item"><a href="#"><img src="./assets/images/bn1.png" alt=""></a></div>
+    <div class="list-item"><a href="#"><img src="./assets/images/bn2.png" alt=""></a></div>
+    <div class="list-item"><a href="#"><img src="./assets/images/bn3.png" alt=""></a></div>
+  </div>
+  
+  <script>
+    $(document).ready(function(){
+      $('.kv-list').slick();
+    });
+  </script>
+</body>
+</html>
